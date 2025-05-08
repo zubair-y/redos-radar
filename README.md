@@ -11,8 +11,6 @@ A CLI tool that scans JavaScript npm packages for potentially dangerous regex pa
 ## 🚀 Quick Setup
 
 ```bash
-git clone <your-repo-url>
-cd redos-radar
 chmod +x setup.sh
 ./setup.sh
 ```
