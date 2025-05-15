@@ -1,0 +1,1826 @@
+[
+  {
+    "type": "literal",
+    "pattern": "^text\\/html(;\\s*charset=[^;]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/fastify/test/content-parser.test.js",
+    "source": "fastify.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[_$a-zA-Z][$\\w]*(?:\\.[_$a-zA-Z][$\\w]*)*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/hapi/lib/methods.js",
+    "source": "hapi.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(.+?(?:[\\\\/]\\.yarn[\\\\/]unplugged[\\\\/][^\\\\/]+)?[\\\\/]node_modules[\\\\/])",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack-config.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "function\\b(?:\\s|\\/\\*[\\S\\s]*?\\*\\/|\\/\\/[^\\n\\r]*[\\n\\r]+)*([^\\s(/]*)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/polyfills/polyfill-nomodule.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "Version\\/10(?:\\.\\d+){1,2}(?: [\\w./]+)?(?: Mobile\\/\\w+)? Safari\\/",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/polyfills/polyfill-nomodule.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(.+?(?:[\\\\/]\\.yarn[\\\\/]unplugged[\\\\/][^\\\\/]+)?[\\\\/]node_modules[\\\\/])",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack-config.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^-?([1-9][0-9]*|0)(\\.[0-9]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/amphtml-validator/validator_wasm.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-z]+([A-Z][a-z]*)*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/amphtml-validator/validator_wasm.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([A-Z][a-z]*)+$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/amphtml-validator/validator_wasm.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^Error(:[^\\n]*)?\\n",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/amphtml-validator/validator_wasm.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "[^%.[\\]]+|\\[(?:(-?\\d+(?:\\.\\d+)?)|([\"'])((?:(?!\\2)[^\\\\]|\\\\.)*?)\\2)\\]|(?=(?:\\.|\\[\\])(?:\\.|\\[\\]|%$))",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/assert/assert.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "((['\"])(?:(?!\\2|\\\\).|\\\\(?:\\r\\n|[\\s\\S]))*(\\2)?|`(?:[^`\\\\$]|\\\\[\\s\\S]|\\$(?!\\{)|\\$\\{(?:[^{}]|\\{[^}]*\\}?)*\\}?)*(`)?)|(\\/\\/.*)|(\\/\\*(?:[^*]|\\*(?!\\/))*(\\*\\/)?)|(\\/(?!\\*)(?:\\[(?:(?![\\]\\\\]).|\\\\.)*\\]|(?![\\/\\]\\\\]).|\\\\.)+\\/(?:(?!\\s*(?:\\b|[\\u0080-\\uFFFF$\\\\'\"~({]|[+\\-!](?!=)|\\.?\\d))|[gmiyus]{1,6}\\b(?![\\u0080-\\uFFFF$\\\\]|\\s*(?:[+\\-*%&|^<>!=?({]|\\/(?![\\/*])))))|(0[xX][\\da-fA-F]+|0[oO][0-7]+|0[bB][01]+|(?:\\d*\\.\\d+|\\d+\\.?)(?:[eE][+-]?\\d+)?)|((?!\\d)(?:(?!\\s)[$\\w\\u0080-\\uFFFF]|\\\\u[\\da-fA-F]{4}|\\\\u\\{[\\da-fA-F]+\\})+)|(--|\\+\\+|&&|\\|\\||=>|\\.{3}|(?:[+\\-\\/%&|^]|\\*{1,2}|<{1,2}|>{1,3}|!=?|={1,2})=?|[?~.,:;[\\](){}])|(\\s+)|(^$|[\\s\\S])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel-packages/packages-bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "[^.[\\]]+|\\[(?:(-?\\d+(?:\\.\\d+)?)|([\"'])((?:(?!\\2)[^\\\\]|\\\\.)*?)\\2)\\]|(?=(?:\\.|\\[\\])(?:\\.|\\[\\]|$))",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel-packages/packages-bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\$\\{([^\\\\}]*(?:\\\\.[^\\\\}]*)*)\\}",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel-packages/packages-bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(((?:[a-zA-Z]:|[\\\\\\/]{2}[^\\\\\\/]+[\\\\\\/]+[^\\\\\\/]+)?[\\\\\\/]?)(?:[^\\\\\\/]*[\\\\\\/])*)((\\.{1,2}|[^\\\\\\/]+?|)(\\.[^.\\/\\\\]*|))[\\\\\\/]*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel-packages/packages-bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([\\w+.-]+:)\\/\\/([^@/#?]*@)?([^:/#?]*)(:\\d+)?(\\/[^#?]*)?(\\?[^#]*)?(#.*)?",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel/bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^file:(?:\\/\\/((?![a-z]:)[^/#?]*)?)?(\\/?[^#?]*)(\\?[^#]*)?(#.*)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel/bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "((['\"])(?:(?!\\2|\\\\).|\\\\(?:\\r\\n|[\\s\\S]))*(\\2)?|`(?:[^`\\\\$]|\\\\[\\s\\S]|\\$(?!\\{)|\\$\\{(?:[^{}]|\\{[^}]*\\}?)*\\}?)*(`)?)|(\\/\\/.*)|(\\/\\*(?:[^*]|\\*(?!\\/))*(\\*\\/)?)|(\\/(?!\\*)(?:\\[(?:(?![\\]\\\\]).|\\\\.)*\\]|(?![\\/\\]\\\\]).|\\\\.)+\\/(?:(?!\\s*(?:\\b|[\\u0080-\\uFFFF$\\\\'\"~({]|[+\\-!](?!=)|\\.?\\d))|[gmiyus]{1,6}\\b(?![\\u0080-\\uFFFF$\\\\]|\\s*(?:[+\\-*%&|^<>!=?({]|\\/(?![\\/*])))))|(0[xX][\\da-fA-F]+|0[oO][0-7]+|0[bB][01]+|(?:\\d*\\.\\d+|\\d+\\.?)(?:[eE][+-]?\\d+)?)|((?!\\d)(?:(?!\\s)[$\\w\\u0080-\\uFFFF]|\\\\u[\\da-fA-F]{4}|\\\\u\\{[\\da-fA-F]+\\})+)|(--|\\+\\+|&&|\\|\\||=>|\\.{3}|(?:[+\\-\\/%&|^]|\\*{1,2}|<{1,2}|>{1,3}|!=?|={1,2})=?|[?~.,:;[\\](){}])|(\\s+)|(^$|[\\s\\S])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel/bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([A-Z][a-z\\d]*)+$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel/bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\s*(text|application)\\/javascript\\s*(;\\s*charset=utf-?8\\s*)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/babel/bundle.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/bytes/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d\\d):(\\d\\d):(\\d\\d)(\\.\\d+)?(z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)(?:\\?(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)?(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'\"()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?(?:\\?(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[^\\x00-\\x20\"'<>%\\\\^`{|}]|%[0-9a-f]{2})|\\{[+#./;?&=,!@|]?(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?(?:,(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?)*\\})*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\d\\d\\d\\d-[0-1]\\d-[0-3]\\d[t\\s](?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[a-z][a-z0-9+\\-.]*:)?\\/?\\/)?(?:[^\\\\\\s#][^\\s#]*)?(?:#[^\\\\\\s]*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/conf/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\x20(?![a-fA-F0-9\\x20])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)em\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)ex\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)ch\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)rem\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vw\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svw\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvw\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvw\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vh\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svh\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvh\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvh\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vmin\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svmin\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvmin\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvmin\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vmax\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svmax\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvmax\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvmax\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vb\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svb\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvb\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvb\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)vi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)svi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)lvi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dvi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqw\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqh\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqb\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqmin\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cqmax\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)cm\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)mm\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)Q\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)in\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)pt\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)pc\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)px\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)deg\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)grad\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)rad\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)turn\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)s\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)ms\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)Hz\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)kHz\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dpi\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dpcm\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)dppx\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)%)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:((\\d+(\\.\\d+)?|\\.\\d+)(e(\\+|-)\\d+)?)-?([^\\W\\d]|[ -ÿ]|(\\\\[\\dA-Fa-f]{1,6}(\\r\\n|[\\t\\n\\f\\r ])?|\\\\[^\\d\\n\\f\\rA-Fa-f]))([\\w\\-]|[ -ÿ]|(\\\\[\\dA-Fa-f]{1,6}(\\r\\n|[\\t\\n\\f\\r ])?|\\\\[^\\d\\n\\f\\rA-Fa-f]))*\\b)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d+(\\.\\d+)?|\\.\\d+)(\\w+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^data:(.*)?,",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/cssnano-simple/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(-?(?:\\d+)?\\.?\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/debug/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^bytes (\\d+)-(\\d+)\\/(\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/edge-runtime/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?<algo>sha256|sha384|sha512)-((?<hash>[A-Za-z0-9+/]+|[A-Za-z0-9_-]+)={0,2}(?:\\s|$)( +[!-~]*)?)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/edge-runtime/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^-?\\d+\\.\\.-?\\d+(?:\\.\\.-?\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/glob/glob.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-zA-Z]\\.\\.[a-zA-Z](?:\\.\\.-?\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/glob/glob.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-zA-Z]:|[\\\\\\/]{2}[^\\\\\\/]+[\\\\\\/][^\\\\\\/]+)?[\\\\\\/]*",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/glob/glob.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(\\/\\*\\*)+$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/glob/glob.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([a-zA-Z]:|[\\\\\\/]{2}[^\\\\\\/]+[\\\\\\/]+[^\\\\\\/]+)?([\\\\\\/])?([\\s\\S]*?)$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/glob/glob.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-zA-Z0-9\\-_]+?\\.[a-zA-Z0-9\\-_]+?\\.([a-zA-Z0-9\\-_]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/jsonwebtoken/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "[^.[\\]]+|\\[(?:(-?\\d+(?:\\.\\d+)?)|([\"'])((?:(?!\\2)[^\\\\]|\\\\.)*?)\\2)\\]|(?=(?:\\.|\\[\\])(?:\\.|\\[\\]|$))",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/jsonwebtoken/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\$\\{([^\\\\}]*(?:\\\\.[^\\\\}]*)*)\\}",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/jsonwebtoken/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(-?(?:\\d+)?\\.?\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/jsonwebtoken/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((?:\\0.|[^?#\\0])*)(\\?(?:\\0.|[^#\\0])*)?(#.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/loader-runner/LoaderRunner.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^-?(\\d+(\\.\\d*)?|\\.\\d+)(e[+-]?\\d+)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/loader-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^-?(\\d+(\\.\\d*)?|\\.\\d+)(e[+-]?\\d+)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/loader-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[(full)?hash(:\\d+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/mini-css-extract-plugin/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([a-z0-9.+-]*:\\/\\/\\/)([a-z0-9.+-]:\\/*)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/native-url/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(=.+)?(\\s*)$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/neo-async/async.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-experimental.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-experimental.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-turbo-experimental.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/app-page.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/pages-api-turbo.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/pages-api.runtime.dev.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((-|\\+)?(\\d+(?:\\.\\d+)?)) *(kb|mb|gb|tb|pb)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/pages-api.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:^|^)\\s*(?:export\\s+)?([\\w.-]+)(?:\\s*=\\s*?|:\\s+?)(\\s*'(?:\\\\'|[^'])*'|\\s*\"(?:\\\\\"|[^\"])*\"|\\s*`(?:\\\\`|[^`])*`|[^#\\r\\n]+)?\\s*(?:#.*)?(?:$|$)",
+    "flags": "gm",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/next-server/server.runtime.prod.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\x20(?![a-fA-F0-9\\x20])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/postcss-modules-local-by-default/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\x20(?![a-fA-F0-9\\x20])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/postcss-modules-scope/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d\\d):(\\d\\d):(\\d\\d)(\\.\\d+)?(z|[+-]\\d\\d:\\d\\d)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d\\d):(\\d\\d):(\\d\\d)(\\.\\d+)?(z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)(?:\\?(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)?(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'\"()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?(?:\\?(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[^\\x00-\\x20\"'<>%\\\\^`{|}]|%[0-9a-f]{2})|\\{[+#./;?&=,!@|]?(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?(?:,(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?)*\\})*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\d\\d\\d\\d-[0-1]\\d-[0-3]\\d[t\\s](?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[a-z][a-z0-9+\\-.]*:)?\\/?\\/)?(?:[^\\\\\\s#][^\\s#]*)?(?:#[^\\\\\\s]*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils2/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d\\d):(\\d\\d):(\\d\\d)(\\.\\d+)?(z|[+-]\\d\\d:\\d\\d)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(\\d\\d):(\\d\\d):(\\d\\d)(\\.\\d+)?(z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'()*+,;=:@]|%[0-9a-f]{2})*)*)(?:\\?(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[a-z][a-z0-9+\\-.]*:)?(?:\\/?\\/(?:(?:[a-z0-9\\-._~!$&'()*+,;=:]|%[0-9a-f]{2})*@)?(?:\\[(?:(?:(?:(?:[0-9a-f]{1,4}:){6}|::(?:[0-9a-f]{1,4}:){5}|(?:[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){4}|(?:(?:[0-9a-f]{1,4}:){0,1}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){3}|(?:(?:[0-9a-f]{1,4}:){0,2}[0-9a-f]{1,4})?::(?:[0-9a-f]{1,4}:){2}|(?:(?:[0-9a-f]{1,4}:){0,3}[0-9a-f]{1,4})?::[0-9a-f]{1,4}:|(?:(?:[0-9a-f]{1,4}:){0,4}[0-9a-f]{1,4})?::)(?:[0-9a-f]{1,4}:[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?))|(?:(?:[0-9a-f]{1,4}:){0,5}[0-9a-f]{1,4})?::[0-9a-f]{1,4}|(?:(?:[0-9a-f]{1,4}:){0,6}[0-9a-f]{1,4})?::)|[Vv][0-9a-f]+\\.[a-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)|(?:[a-z0-9\\-._~!$&'\"()*+,;=]|%[0-9a-f]{2})*)(?::\\d*)?(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*|\\/(?:(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?|(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})+(?:\\/(?:[a-z0-9\\-._~!$&'\"()*+,;=:@]|%[0-9a-f]{2})*)*)?(?:\\?(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?(?:#(?:[a-z0-9\\-._~!$&'\"()*+,;=:@/?]|%[0-9a-f]{2})*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[^\\x00-\\x20\"'<>%\\\\^`{|}]|%[0-9a-f]{2})|\\{[+#./;?&=,!@|]?(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?(?:,(?:[a-z0-9_]|%[0-9a-f]{2})+(?::[1-9][0-9]{0,3}|\\*)?)*\\})*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\d\\d\\d\\d-[0-1]\\d-[0-3]\\d[t\\s](?:[0-2]\\d:[0-5]\\d:[0-5]\\d|23:59:60)(?:\\.\\d+)?(?:z|[+-]\\d\\d(?::?\\d\\d)?)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:(?:[a-z][a-z0-9+\\-.]*:)?\\/?\\/)?(?:[^\\\\\\s#][^\\s#]*)?(?:#[^\\\\\\s]*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(?:%.+)?\\s*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/schema-utils3/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((?:\\d+)?\\-?\\d?\\.?\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/send/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(\\S+) line (\\d+)(?: > eval line \\d+)* > eval",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/stacktrace-parser/stack-trace-parser.cjs.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([\\w+.-]+:)\\/\\/([^@/#?]*@)?([^:/#?]*)(:\\d+)?(\\/[^#?]*)?",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/terser/bundle.min.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^-?[0-9]+(\\.[0-9]+)?(e[+-][0-9]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/terser/bundle.min.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:^|[^.])\\/\\/# sourceMappingURL=data:application\\/json(;[\\w=-]*)?;base64,([+/0-9A-Za-z]*=*)\\s*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/terser/bundle.min.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "[^%.[\\]]+|\\[(?:(-?\\d+(?:\\.\\d+)?)|([\"'])((?:(?!\\2)[^\\\\]|\\\\.)*?)\\2)\\]|(?=(?:\\.|\\[\\])(?:\\.|\\[\\]|%$))",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/util/util.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(#?(?:\\0.|[^?#\\0])*)(\\?(?:\\0.|[^#\\0])*)?(#.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[(full)?hash(:\\d+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[(full)?hash(:\\d+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[(full)?hash(:\\d+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[(full)?hash(:\\d+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([_\\p{L}][_0-9\\p{L}]*)?\\(.*\\)$",
+    "flags": "iu",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\[contenthash(:\\w+)?\\]",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(.+?(?:[\\\\/]\\.yarn[\\\\/]unplugged[\\\\/][^\\\\/]+)?[\\\\/]node_modules[\\\\/])",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\u0020(?![a-fA-F0-9\\u0020])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^data:([^;,]+)?((?:;[^;,]+)*?)(?:;(base64)?)?,(.*)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((git\\+)?(ssh|https?|file)|git|github|gitlab|bitbucket|gist):$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((git\\+)?(ssh|https?|file)|git):\\/\\/",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:[^/.]+(\\.[^/]+)+|localhost)$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "([^/@#:.]+(?:\\.[^/@#:.]+)+|localhost):([^#/0-9]+)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([^/@#:.]+(?:\\.[^/@#:.]+)+)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((?:\\0.|[^?#\\0])*)(\\?(?:\\0.|[^#\\0])*)?(#.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^((?:\\0.|[^?\\0])*)(\\?.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([^-+]+)?(?:-([^+]+))?(?:\\+(.+))?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([^-+]+)?(?:-([^+]+))?(?:\\+(.+))?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/webpack/bundle5.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.(css|scss|sass)(\\?.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/loaders/utils.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.css(\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/plugins/css-minimizer-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\/page(\\.[^/]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/plugins/flight-manifest-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\/page(\\.[^/]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/plugins/flight-manifest-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(\\d+(?:\\.\\d+)?)(.*)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@ampproject/toolbox-optimizer/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^bytes (\\d+)-(\\d+)\\/(\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@edge-runtime/primitives/fetch.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?<algo>sha256|sha384|sha512)-((?<hash>[A-Za-z0-9+/]+|[A-Za-z0-9_-]+)={0,2}(?:\\s|$)( +[!-~]*)?)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@edge-runtime/primitives/fetch.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^bytes (\\d+)-(\\d+)\\/(\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@edge-runtime/primitives/load.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?<algo>sha256|sha384|sha512)-((?<hash>[A-Za-z0-9+/]+|[A-Za-z0-9_-]+)={0,2}(?:\\s|$)( +[!-~]*)?)?",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@edge-runtime/primitives/load.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:,[\\s\\w]+:[^,]+)+\\]$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[a-z0-9-]+(?:\\.[a-z0-9-]+)*$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^--(?:inspect|debug)(?:-brk)?(?:=\\d+)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:\\/|\\*)*\\s*@(ts-expect-error|ts-ignore)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "@(\\S+)(\\s+(?:\\S.*)?)?$",
+    "flags": "gm",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:EventTarget|Node|(?:HTML[a-zA-Z]*)?Element)$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\s*(\\/\\/[@#] .*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:^(?:\\s|\\*)*)",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "jquery(-[\\d.]+)?(\\.intellisense)?(\\.min)?\\.js$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@typescript/vfs/typescript.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "([\\/\\\\]\\*\\*[\\/\\\\]\\*)+",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/nft/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(0$|(?:[+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)(?=px$))",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?(ch|em|ex|rem|vh|vw|vmin|vmax|cm|mm|in|pc|pt))$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?(?:deg|rad))$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?%)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)(?:px)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[+-]?(?:\\d*\\.\\d*|[1-9]\\d*)(?:e[+-]?\\d+)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[+-]?(\\d+|\\d*\\.\\d+)(e[+-]?\\d+)?(%|\\w+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\x20(?![a-fA-F0-9\\x20])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(-?\\d*\\.?\\d(?!\\b-.+[,)](?![^+\\-/*])\\D)(?:%|[a-z]+)?|\\))([+\\-/*])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "data:(?<imageType>[a-z/+]+)(;[^;=]+=[^;=]+)*?(;(?<encodingType>[^;,]+))?,(?<dataString>.*)",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\d+(\\.\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^Error(:[^\\n]*)?\\n",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.edge.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(0$|(?:[+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)(?=px$))",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?(ch|em|ex|rem|vh|vw|vmin|vmax|cm|mm|in|pc|pt))$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?(?:deg|rad))$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?%)$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^([+-]?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?)(?:px)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[+-]?(?:\\d*\\.\\d*|[1-9]\\d*)(?:e[+-]?\\d+)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^[+-]?(\\d+|\\d*\\.\\d+)(e[+-]?\\d+)?(%|\\w+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(^|\\\\+)?(\\\\[A-F0-9]{1,6})\\x20(?![a-fA-F0-9\\x20])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(-?\\d*\\.?\\d(?!\\b-.+[,)](?![^+\\-/*])\\D)(?:%|[a-z]+)?|\\))([+\\-/*])",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "data:(?<imageType>[a-z/+]+)(;[^;=]+=[^;=]+)*?(;(?<encodingType>[^;,]+))?,(?<dataString>.*)",
+    "flags": "g",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^\\d+(\\.\\d+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^Error(:[^\\n]*)?\\n",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/compiled/@vercel/og/index.node.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/]+\\.\\w+))(\\/?|$)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/lib/metadata/resolvers/resolve-url.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:.*[\\\\/])?node_modules(?:[\\\\/].*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/shared/lib/turbopack/utils.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:\\/[^/]+)*\\/_.*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/plugins/next-types-plugin/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.(css|scss|sass)(\\?.*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/loaders/utils.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.css(\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/plugins/css-minimizer-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\/page(\\.[^/]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/plugins/flight-manifest-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\/page(\\.[^/]+)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/plugins/flight-manifest-plugin.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/]+\\.\\w+))(\\/?|$)",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/lib/metadata/resolvers/resolve-url.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "^(?:.*[\\\\/])?node_modules(?:[\\\\/].*)?$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/shared/lib/turbopack/utils.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.css(?:\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/loaders/lightningcss-loader/src/minify.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.[cm]?js(\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/build/webpack/plugins/minify-webpack-plugin/src/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "(?:\\/[^/]+)*\\/_.*$",
+    "flags": "",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/plugins/next-types-plugin/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.css(?:\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/loaders/lightningcss-loader/src/minify.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  },
+  {
+    "type": "literal",
+    "pattern": "\\.[cm]?js(\\?.*)?$",
+    "flags": "i",
+    "file": "/home/ahmed-bashir/Documents/school/redos-radar/cli/data/next/dist/esm/build/webpack/plugins/minify-webpack-plugin/src/index.js",
+    "source": "next.json",
+    "issue": "Nested quantifier"
+  }
+]
