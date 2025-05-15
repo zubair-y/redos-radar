@@ -60,7 +60,7 @@ async function extractRegexes(pkgName: string) {
 
   const output = path.resolve(__dirname, `../results/${pkgName}.json`);
   fs.writeFileSync(output, JSON.stringify(regexes, null, 2));
-  console.log(`✅ Extracted ${regexes.length} regexes from ${pkgName}`);
+  console.log(`Extracted ${regexes.length} regexes from ${pkgName}`);
 }
 
 packages.forEach(extractRegexes);
