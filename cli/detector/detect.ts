@@ -1,4 +1,3 @@
-// cli/detect.ts
 import fs from 'fs';
 import path from 'path';
 
@@ -29,6 +28,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 
 fs.readdirSync(RESULTS_DIR).forEach((file) => {
   if (!file.endsWith('.json')) return;
+
   const fullPath = path.join(RESULTS_DIR, file);
   const regexList = JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
 
