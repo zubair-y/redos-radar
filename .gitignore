@@ -1,21 +1,24 @@
-# dependencies
+# Node deps
 node_modules/
 
-# downloaded packages
+# Downloaded packages (raw npm tarballs)
 data/
+cli/data/
 
-# extracted results
+# Raw extraction results (AST‐extracted regex lists)
 results/
+cli/results/
 
-# build artifacts (if used in future)
+# Filtered/detected output
+detected/
+cli/detected/
+
+# Build artifacts
 dist/
 *.tsbuildinfo
 *.js.map
 
-# logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-
-.DS_Store

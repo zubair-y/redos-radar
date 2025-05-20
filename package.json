@@ -1,39 +1,23 @@
 {
   "name": "redos-radar",
   "version": "1.0.0",
+  "description": "CLI that downloads popular npm packages, extracts their RegExps and flags potentially unsafe patterns.",
+  "type": "module",
   "main": "index.js",
+
   "scripts": {
-    "collect": "ts-node dataset/collect.ts",
-    "extract": "ts-node analysis/extract.ts",
-    "scan": "ts-node cli/scan.ts",
-    "test": "jest",
-    "lint": "eslint . --ext .ts --fix"
+    "download": "node cli/crawler/download.js",
+    "extract" : "node cli/extractor/extract.js",
+    "detect"  : "node cli/detector/detect.js",
+    "scan"    : "npm run download && npm run extract && npm run detect"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/globby": "^9.1.0",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.18",
-    "chalk": "^4.1.2",
-    "eslint": "^9.26.0",
-    "jest": "^29.7.0",
-    "prettier": "^3.5.3",
-    "ts-jest": "^29.3.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
+
   "dependencies": {
-    "@babel/parser": "^7.27.1",
-    "exit": "^0.1.2",
-    "fs-extra": "^11.3.0",
-    "globby": "^11.1.0",
-    "node-fetch": "^3.3.2",
-    "pacote": "^21.0.0",
-    "redos-detector": "^6.1.2",
-    "regexp-tree": "^0.1.27"
-  },
-  "description": ""
+    "@babel/parser"   : "^7.27.1",
+    "@babel/traverse" : "^7.27.1",
+    "fs-extra"        : "^11.3.0",
+    "globby"          : "^13.2.2",
+    "pacote"          : "^21.0.0",
+    "safe-regex"      : "^2.1.1"
+  }
 }
