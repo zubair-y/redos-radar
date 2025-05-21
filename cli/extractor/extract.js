@@ -8,20 +8,14 @@ import { globby }            from 'globby';
 
 const traverse = traverseDefault.default ?? traverseDefault;   // CJS ↔ ESM safety
 
-/* ------------------------------------------------------------------ */
-/*  resolve __dirname in pure-ESM                                      */
-/* ------------------------------------------------------------------ */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname  = dirname(__filename);
 
-/* packages to analyse ---------------------------------------------- */
 const PACKAGES = ['express', 'koa', 'hapi', 'fastify', 'next'];
 
-/* list of glob patterns we want to search for ---------------------- */
 const EXTENSIONS = ['js', 'cjs', 'mjs', 'jsx', 'ts', 'tsx'];
 const PATTERNS   = EXTENSIONS.map(ext => `**/*.${ext}`);
 
-/* helper: extract regexes from one package ------------------------- */
 async function extractOne(pkg) {
   const baseDir = path.resolve(__dirname, `../data/${pkg}`);
 
@@ -36,8 +30,7 @@ async function extractOne(pkg) {
   const regexes = [];
 
   for (const file of files) {
-    // discard tests, bundles, minified or build artefacts
-    if (/[\\/](?:test|tests|spec|dist|bundle|build|\.next)[\\/]/i.test(file))
+    if (/[\\/](?:test|tests|spec|bundle|\.next)[\\/]/i.test(file))
       continue;
 
     try {
@@ -72,7 +65,6 @@ async function extractOne(pkg) {
         }
       });
     } catch {
-      /* ignore parse failures (exotic syntax, decorators, etc.) */
     }
   }
 
@@ -83,12 +75,10 @@ async function extractOne(pkg) {
   console.log(`DONE  Extracted ${regexes.length} regexes from ${pkg}`);
 }
 
-/* orchestrator ----------------------------------------------------- */
 export async function runAll() {
   for (const pkg of PACKAGES) await extractOne(pkg);
 }
 
-/* run if invoked directly ----------------------------------------- */
 if (import.meta.url === `file://${process.argv[1]}`) {
   runAll().catch(err => { console.error(err); process.exit(1); });
 }

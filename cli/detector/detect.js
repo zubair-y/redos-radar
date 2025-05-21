@@ -3,23 +3,19 @@ import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { dangerous, worstCaseTime } from '../analyser/runSafe.js';
 
-/* -------------------------------------------------- helpers for ESM */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname  = dirname(__filename);
 
-/* ----------------------------- regex heuristics */
 const nestedQuantifier = /\(([^()]*?[+*])\)[+*?]/;
 const dotStar          = /(?<!\\)\.\*/;
 const overlapAlternation = /^\^?(?:\(\?:)?([^\n|]{3,})\|[^\n|]*\1/;
 
-/* -------------------------------------------------- main routine */
 export async function detectAll() {
   const RESULTS_DIR = path.resolve(__dirname, '../results');
   const OUTPUT_DIR  = path.resolve(__dirname, '../detected');
 
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-  /** keyed by `${file}::${pattern}::${flags}` */
   const byKey = {};
 
   const register = (entry, issue) => {
@@ -31,7 +27,6 @@ export async function detectAll() {
     }
   };
 
-  /* -------------- walk every extracted-regex JSON */
   for (const file of fs.readdirSync(RESULTS_DIR)) {
     if (!file.endsWith('.json')) continue;
     const records = JSON.parse(
@@ -47,7 +42,6 @@ export async function detectAll() {
     }
   }
 
-  /* -------------- severity + safe-regex runtime estimate */
   for (const f of Object.values(byKey)) {
     const count = f.issues.length;
     let sev =
@@ -61,7 +55,7 @@ export async function detectAll() {
     f.runtimeMs = worstCaseTime(f.pattern, f.flags);
   }
 
-  /* -------------- write outputs */
+  // write outputs
   const all = Object.values(byKey);
 
   fs.writeFileSync(path.join(OUTPUT_DIR, 'all.json'),      JSON.stringify(all, null, 2));
@@ -76,7 +70,6 @@ export async function detectAll() {
   console.log(`Found ${nestedCt} nested, ${dotCt} dot-star and ${overlapCt} overlap issues (deduped).`);
 }
 
-/* run when invoked directly */
 if (import.meta.url === `file://${process.argv[1]}`) {
   detectAll().catch(err => { console.error(err); process.exit(1); });
 }
