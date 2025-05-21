@@ -1,12 +1,12 @@
-import fs from 'fs-extra';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import pacote from 'pacote';
+import fs from "fs-extra";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+import pacote from "pacote";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname  = dirname(__filename);
+const __dirname = dirname(__filename);
 
-const PACKAGES = ['express', 'koa', 'hapi', 'fastify', 'next'];
+const PACKAGES = ["express", "koa", "hapi", "fastify", "next"];
 
 async function grab(pkg) {
   const dest = path.resolve(__dirname, `../data/${pkg}`);
@@ -21,12 +21,15 @@ async function grab(pkg) {
   console.log(`Done downloading ${pkg}.`);
 }
 
-export async function runAll() {
+export async function downloadAll() {
   for (const pkg of PACKAGES) {
     await grab(pkg);
   }
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  runAll().catch(err => { console.error(err); process.exit(1); });
+  runAll().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 }

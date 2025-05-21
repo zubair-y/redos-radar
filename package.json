@@ -4,20 +4,22 @@
   "description": "CLI that downloads popular npm packages, extracts their RegExps and flags potentially unsafe patterns.",
   "type": "module",
   "main": "index.js",
-
   "scripts": {
     "download": "node cli/crawler/download.js",
-    "extract" : "node cli/extractor/extract.js",
-    "detect"  : "node cli/detector/detect.js",
-    "scan"    : "npm run download && npm run extract && npm run detect"
+    "extract": "node cli/extractor/extract.js",
+    "detect": "node cli/detector/detect.js",
+    "scan": "node cli/scan.js"
   },
-
   "dependencies": {
-    "@babel/parser"   : "^7.27.1",
-    "@babel/traverse" : "^7.27.1",
-    "fs-extra"        : "^11.3.0",
-    "globby"          : "^13.2.2",
-    "pacote"          : "^21.0.0",
-    "safe-regex"      : "^2.1.1"
+    "@babel/parser": "^7.27.1",
+    "@babel/traverse": "^7.27.1",
+    "fs-extra": "^11.3.0",
+    "globby": "^13.2.2",
+    "pacote": "^21.0.0",
+    "safe-regex": "^2.1.1",
+    "safe-regex2": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }
