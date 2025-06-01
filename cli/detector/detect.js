@@ -6,9 +6,21 @@ import { dangerous, worstCaseTime } from "../analyser/runSafe.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+/* ---------- heuristics to flag risky constructs ------------------- */
 const nestedQuantifier = /\(([^()]*?[+*])\)[+*?]/;
 const dotStar = /(?<!\\)\.\*/;
-const overlapAlternation = /^\^?(?:\(\?:)?([^\n|]{3,})\|[^\n|]*\1/;
+const overlapAlternation = /(?:^|\|)([^\n|]{3,})(?:\|[^\n|]*\1|\1[^\n|]*\|)/;
+
+/* ---------- helper: skip vendored / compiled / tests -------------- */
+function skipVendored(filePath) {
+  return (
+    /[\\/]dist[\\/]compiled[\\/]/i.test(filePath) ||
+    /[\\/]compiled[\\/]/i.test(filePath) ||
+    /[\\/]vendor[\\/]/i.test(filePath) ||
+    /[\\/]node_modules[\\/]/i.test(filePath) ||
+    /[\\/]dist[\\/]((?!(lib)[\\/]).)*$/i.test(filePath) // drop dist/** except dist/lib
+  );
+}
 
 export async function detectAll() {
   const RESULTS_DIR = path.resolve(__dirname, "../results");
@@ -27,6 +39,7 @@ export async function detectAll() {
     }
   };
 
+  /* ---------- scan every results/<pkg>.json ----------------------- */
   for (const file of fs.readdirSync(RESULTS_DIR)) {
     if (!file.endsWith(".json")) continue;
     const records = JSON.parse(
@@ -34,6 +47,8 @@ export async function detectAll() {
     );
 
     for (const rec of records) {
+      if (skipVendored(rec.file)) continue;
+
       const base = { ...rec, source: file };
 
       if (nestedQuantifier.test(rec.pattern))
@@ -44,10 +59,14 @@ export async function detectAll() {
     }
   }
 
+  /* ---------- compute severity & worst-case runtime --------------- */
   for (const f of Object.values(byKey)) {
-    const count = f.issues.length;
-    let sev =
-      count > 1 ? "high" : f.issues[0] === "Greedy dot-star" ? "low" : "medium";
+    const many = f.issues.length > 1;
+    let sev = many
+      ? "high"
+      : f.issues[0] === "Greedy dot-star"
+        ? "low"
+        : "medium";
 
     if (dangerous(f.pattern, f.flags)) sev = "high";
 
@@ -57,17 +76,26 @@ export async function detectAll() {
     f.worstInput = t.inputLen;
   }
 
-  // write outputs
-  const all = Object.values(byKey);
+  /* ---------- keep only medium / high severity -------------------- */
+  const serious = Object.values(byKey).filter((f) => f.severity !== "low");
 
+  /* ---------- NEW: deduplicate duplicates CJS vs ESM -------------- */
+  const uniqMap = {};
+  for (const rec of serious) {
+    const sig = rec.pattern + "/" + rec.flags;
+    uniqMap[sig] ??= rec; // first occurrence wins
+  }
+  const final = Object.values(uniqMap);
+
+  /* ---------- write JSON outputs ---------------------------------- */
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "all.json"),
-    JSON.stringify(all, null, 2)
+    JSON.stringify(final, null, 2)
   );
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "nested.json"),
     JSON.stringify(
-      all.filter((f) => f.issues.includes("Nested quantifier")),
+      final.filter((f) => f.issues.includes("Nested quantifier")),
       null,
       2
     )
@@ -75,7 +103,7 @@ export async function detectAll() {
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "dotstar.json"),
     JSON.stringify(
-      all.filter((f) => f.issues.includes("Greedy dot-star")),
+      final.filter((f) => f.issues.includes("Greedy dot-star")),
       null,
       2
     )
@@ -83,25 +111,29 @@ export async function detectAll() {
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "overlap.json"),
     JSON.stringify(
-      all.filter((f) => f.issues.includes("Overlapping alternation")),
+      final.filter((f) => f.issues.includes("Overlapping alternation")),
       null,
       2
     )
   );
 
-  const nestedCt = all.filter((f) =>
+  /* ---------- console summary ------------------------------------- */
+  const nestedCt = final.filter((f) =>
     f.issues.includes("Nested quantifier")
   ).length;
-  const dotCt = all.filter((f) => f.issues.includes("Greedy dot-star")).length;
-  const overlapCt = all.filter((f) =>
+  const dotCt = final.filter((f) =>
+    f.issues.includes("Greedy dot-star")
+  ).length;
+  const overlapCt = final.filter((f) =>
     f.issues.includes("Overlapping alternation")
   ).length;
 
   console.log(
-    `Found ${nestedCt} nested, ${dotCt} dot-star and ${overlapCt} overlap issues (deduped).`
+    `Found ${nestedCt} nested, ${dotCt} dot-star and ${overlapCt} overlap issues (unique).`
   );
 }
 
+/* CLI --------------------------------------------------------------- */
 if (import.meta.url === `file://${process.argv[1]}`) {
   detectAll().catch((err) => {
     console.error(err);

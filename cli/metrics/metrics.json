@@ -1,0 +1,19 @@
+{
+  "scannedPkgs": 12,
+  "uniquePatternsFlagged": 42,
+  "patternsPerIssue": {
+    "Nested quantifier": 27,
+    "Greedy dot-star": 1,
+    "Overlapping alternation": 14
+  },
+  "severityHistogram": {
+    "high": 29,
+    "medium": 13,
+    "low": 0
+  },
+  "packagePrevalence": {
+    "nested": 9,
+    "dotstar": 1,
+    "overlap": 4
+  }
+}

@@ -9,6 +9,13 @@ export function dangerous(pattern, flags = "") {
   }
 }
 
+function pickProbeChar(pattern) {
+  if (/(\\d|\[0-9])/.test(pattern)) return "1";
+  if (/(\\s|\[\\s])/.test(pattern)) return " ";
+  if (/(\\w|\[A-Za-z0-9_])/.test(pattern)) return "a";
+  return "a";
+}
+
 export function worstCaseTime(pattern, flags = "") {
   let re;
   try {
@@ -21,7 +28,8 @@ export function worstCaseTime(pattern, flags = "") {
   let slow = { ms: 0, inputLen: 0 };
 
   while (len <= 2 ** 18) {
-    const probe = "a".repeat(len) + "!";
+    const probeChar = pickProbeChar(pattern);
+    const probe = probeChar.repeat(len) + "!";
     const t0 = performance.now();
     re.test(probe);
     const dt = performance.now() - t0;
