@@ -6,19 +6,19 @@ import { dangerous, worstCaseTime } from "../analyser/runSafe.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-/* ---------- heuristics to flag risky constructs ------------------- */
+// Heuristics to flag risky constructs
 const nestedQuantifier = /\(([^()]*?[+*])\)[+*?]/;
 const dotStar = /(?<!\\)\.\*/;
 const overlapAlternation = /(?:^|\|)([^\n|]{3,})(?:\|[^\n|]*\1|\1[^\n|]*\|)/;
 
-/* ---------- helper: skip vendored / compiled / tests -------------- */
+// helper: skip vendored / compiled / tests
 function skipVendored(filePath) {
   return (
     /[\\/]dist[\\/]compiled[\\/]/i.test(filePath) ||
     /[\\/]compiled[\\/]/i.test(filePath) ||
     /[\\/]vendor[\\/]/i.test(filePath) ||
     /[\\/]node_modules[\\/]/i.test(filePath) ||
-    /[\\/]dist[\\/]((?!(lib)[\\/]).)*$/i.test(filePath) // drop dist/** except dist/lib
+    /[\\/]dist[\\/]((?!(lib)[\\/]).)*$/i.test(filePath)
   );
 }
 
@@ -39,7 +39,7 @@ export async function detectAll() {
     }
   };
 
-  /* ---------- scan every results/<pkg>.json ----------------------- */
+  // scan every results/<pkg>.json
   for (const file of fs.readdirSync(RESULTS_DIR)) {
     if (!file.endsWith(".json")) continue;
     const records = JSON.parse(
@@ -59,7 +59,7 @@ export async function detectAll() {
     }
   }
 
-  /* ---------- compute severity & worst-case runtime --------------- */
+  // compute severity & worst-case runtime
   for (const f of Object.values(byKey)) {
     const many = f.issues.length > 1;
     let sev = many
@@ -76,18 +76,18 @@ export async function detectAll() {
     f.worstInput = t.inputLen;
   }
 
-  /* ---------- keep only medium / high severity -------------------- */
+  // keep only medium / high severity
   const serious = Object.values(byKey).filter((f) => f.severity !== "low");
 
-  /* ---------- NEW: deduplicate duplicates CJS vs ESM -------------- */
+  // deduplicate duplicates CJS vs ESM
   const uniqMap = {};
   for (const rec of serious) {
     const sig = rec.pattern + "/" + rec.flags;
-    uniqMap[sig] ??= rec; // first occurrence wins
+    uniqMap[sig] ??= rec;
   }
   const final = Object.values(uniqMap);
 
-  /* ---------- write JSON outputs ---------------------------------- */
+  // write to json
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "all.json"),
     JSON.stringify(final, null, 2)
@@ -117,7 +117,7 @@ export async function detectAll() {
     )
   );
 
-  /* ---------- console summary ------------------------------------- */
+  // console summary
   const nestedCt = final.filter((f) =>
     f.issues.includes("Nested quantifier")
   ).length;
@@ -133,7 +133,6 @@ export async function detectAll() {
   );
 }
 
-/* CLI --------------------------------------------------------------- */
 if (import.meta.url === `file://${process.argv[1]}`) {
   detectAll().catch((err) => {
     console.error(err);

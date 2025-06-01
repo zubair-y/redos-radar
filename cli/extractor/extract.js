@@ -1,6 +1,3 @@
-/* ------------------------------------------------------------------ */
-/*  extract.js – walk each downloaded package and dump its RegExps    */
-/* ------------------------------------------------------------------ */
 import fs from "fs";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -13,11 +10,9 @@ const traverse = traverseDefault.default ?? traverseDefault;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-/* make sure results/ exists                                             */
 fsExtra.ensureDirSync(path.resolve(__dirname, "../results"));
 
 const PACKAGES = [
-  // ─── original core set ───────────────────────────────────────────
   "semver",
   "ansi-styles",
   "debug",
@@ -48,8 +43,6 @@ const PACKAGES = [
   "p-limit",
   "@types/node",
   "uuid",
-
-  // ─── second batch we already added ───────────────────────────────
   "yallist",
   "safe-buffer",
   "minipass",
@@ -60,14 +53,12 @@ const PACKAGES = [
   "globals",
   "string_decoder",
   "json-schema-traverse",
-
-  // ─── NEW: regex-heavy / parser-ish libs with a history of issues ─
-  "validator", // dozens of hand-rolled validation regexes
+  "validator",
   "moment",
   "moment-timezone",
-  "path-to-regexp", // route patterns with nested quantifiers
+  "path-to-regexp",
   "is-glob",
-  "micromatch", // glob → regex conversion
+  "micromatch",
   "regexpp",
   "regexpu-core",
   "xregexp",
@@ -78,11 +69,11 @@ const PACKAGES = [
   "postcss",
 ];
 
-/* we consider only human-written source files                           */
+// we consider only human written files
 const EXTENSIONS = ["js", "cjs", "mjs", "jsx", "ts", "tsx"];
 const PATTERNS = EXTENSIONS.map((ext) => `**/*.${ext}`);
 
-/* skip vendored / generated / test blobs                                */
+// skip vendored / generated / test blobs
 const SKIP_PATH_RE = new RegExp(
   [
     String.raw`[\\/]dist[\\/]compiled[\\/]`,
@@ -90,13 +81,12 @@ const SKIP_PATH_RE = new RegExp(
     String.raw`[\\/]vendor[\\/]`,
     String.raw`[\\/]third[-_]party[\\/]`,
     String.raw`[\\/]node_modules[\\/]`,
-    String.raw`[\\/]dist[\\/]((?!(lib)[\\/]).)*$`, // any dist/** except dist/lib/**
+    String.raw`[\\/]dist[\\/]((?!(lib)[\\/]).)*$`,
     String.raw`[\\/](?:test|tests|spec|bundle|\.next)[\\/]`,
   ].join("|"),
   "i"
 );
 
-/* ------------------------------------------------------------------ */
 async function extractOne(pkg) {
   const baseDir = path.resolve(__dirname, `../data/${pkg}`);
 
@@ -143,25 +133,20 @@ async function extractOne(pkg) {
           }
         },
       });
-    } catch {
-      /* ignore parse errors in mis-tagged files */
-    }
+    } catch {}
   }
 
-  /* ----------- WRITE results – FLAT filename --------------------- */
-  const safeName = pkg.replace(/[@/]/g, "_"); // "@types/node" → "_types_node"
+  const safeName = pkg.replace(/[@/]/g, "_");
   const outFile = path.resolve(__dirname, `../results/${safeName}.json`);
 
   fs.writeFileSync(outFile, JSON.stringify(regexes, null, 2));
   console.log(`DONE  Extracted ${regexes.length} regexes from ${pkg}`);
 }
 
-/* ------------------------------------------------------------------ */
 export async function extractAll() {
   for (const pkg of PACKAGES) await extractOne(pkg);
 }
 
-/* CLI entry-point --------------------------------------------------- */
 if (import.meta.url === `file://${process.argv[1]}`) {
   extractAll().catch((err) => {
     console.error(err);

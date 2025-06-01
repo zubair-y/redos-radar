@@ -10,7 +10,6 @@ const DETECTED = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "../detected/all.json"), "utf8")
 );
 
-// ---- helpers --------------------------------------------------------
 const byIssue = {
   "Nested quantifier": 0,
   "Greedy dot-star": 0,

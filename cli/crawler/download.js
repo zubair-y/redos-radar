@@ -7,7 +7,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const PACKAGES = [
-  // ─── original core set ───────────────────────────────────────────
   "semver",
   "ansi-styles",
   "debug",
@@ -38,8 +37,6 @@ const PACKAGES = [
   "p-limit",
   "@types/node",
   "uuid",
-
-  // ─── second batch we already added ───────────────────────────────
   "yallist",
   "safe-buffer",
   "minipass",
@@ -50,14 +47,12 @@ const PACKAGES = [
   "globals",
   "string_decoder",
   "json-schema-traverse",
-
-  // ─── NEW: regex-heavy / parser-ish libs with a history of issues ─
-  "validator", // dozens of hand-rolled validation regexes
+  "validator",
   "moment",
   "moment-timezone",
-  "path-to-regexp", // route patterns with nested quantifiers
+  "path-to-regexp",
   "is-glob",
-  "micromatch", // glob → regex conversion
+  "micromatch",
   "regexpp",
   "regexpu-core",
   "xregexp",
@@ -68,7 +63,7 @@ const PACKAGES = [
   "postcss",
 ];
 
-/** fetch & unpack one package into  data/<pkg> */
+// fetch & unpack one package into  data/<pkg>
 async function grab(pkg) {
   const dest = path.resolve(__dirname, `../data/${pkg}`);
 
@@ -86,9 +81,6 @@ export async function downloadAll() {
   for (const pkg of PACKAGES) await grab(pkg);
 }
 
-/* ------------------------------------------------------------------ */
-/* CLI entry-point                                                    */
-/* ------------------------------------------------------------------ */
 if (import.meta.url === `file://${process.argv[1]}`) {
   downloadAll().catch((err) => {
     console.error(err);
